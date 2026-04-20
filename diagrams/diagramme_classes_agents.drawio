@@ -1,0 +1,179 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="NYgv78-97Kwn7Qy8gc9h">
+    <mxGraphModel dx="894" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-18" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="HighwayAgent" vertex="1">
+          <mxGeometry height="170" width="160" x="345" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-19" parent="OMx-_PuhxHUSM0RGTiA1-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="- segmentId : String&lt;br&gt;- averageSpeed : double&lt;br&gt;- trafficDensity : String&lt;br&gt;- incidentDetected : boolean" vertex="1">
+          <mxGeometry height="64" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-20" parent="OMx-_PuhxHUSM0RGTiA1-18" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-21" parent="OMx-_PuhxHUSM0RGTiA1-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="+ monitorTraffic()&lt;br&gt;+ detectIncident()&lt;br&gt;+ sendStatusUpdate()&lt;br&gt;+ suggestDiversion()" vertex="1">
+          <mxGeometry height="72" width="160" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-22" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="GatewayAgent" vertex="1">
+          <mxGeometry height="170" width="230" x="10" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-23" parent="OMx-_PuhxHUSM0RGTiA1-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="- gatewayId : String&lt;br&gt;- connectedUrbanZones : List&lt;br&gt;- connectedHighwaySegments : List&lt;br&gt;- flowStatus : String" vertex="1">
+          <mxGeometry height="64" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-24" parent="OMx-_PuhxHUSM0RGTiA1-22" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-25" parent="OMx-_PuhxHUSM0RGTiA1-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="+ receiveRouteRequest()&lt;br&gt;+ redirectFlow()&lt;br&gt;+ communicateWithSupervisor()&lt;br&gt;+ updateGatewayState()" vertex="1">
+          <mxGeometry height="72" width="230" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-26" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="TrafficLightAgent" vertex="1">
+          <mxGeometry height="178" width="180" x="610" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-27" parent="OMx-_PuhxHUSM0RGTiA1-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="- lightId : String&lt;br&gt;- currentColor : String&lt;br&gt;- normalCycleDuration : int&lt;br&gt;- emergencyMode : boolean" vertex="1">
+          <mxGeometry height="64" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-28" parent="OMx-_PuhxHUSM0RGTiA1-26" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="" vertex="1">
+          <mxGeometry height="10" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-29" parent="OMx-_PuhxHUSM0RGTiA1-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="+ changeLight()&lt;br&gt;+ adaptCycle()&lt;br&gt;+ enableEmergencyPriority()&lt;br&gt;+ restoreNormalMode()" vertex="1">
+          <mxGeometry height="78" width="180" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-30" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="VehicleAgent" vertex="1">
+          <mxGeometry height="190" width="170" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-31" parent="OMx-_PuhxHUSM0RGTiA1-30" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="- vehicleId : String&lt;br&gt;- currentPosition : Node&lt;br&gt;- destination : Node&lt;br&gt;- currentState : String&lt;br&gt;- currentPath : RoutePath" vertex="1">
+          <mxGeometry height="84" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-32" parent="OMx-_PuhxHUSM0RGTiA1-30" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="" vertex="1">
+          <mxGeometry height="8" width="170" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-33" parent="OMx-_PuhxHUSM0RGTiA1-30" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="+ requestRoute()&lt;br&gt;+ receiveAlternativeRoute()&lt;br&gt;+ sendTrafficAlert()&lt;br&gt;+ updatePosition()" vertex="1">
+          <mxGeometry height="72" width="170" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-34" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="SupervisorAgent" vertex="1">
+          <mxGeometry height="170" width="160" x="630" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-35" parent="OMx-_PuhxHUSM0RGTiA1-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="- supervisorId : String&lt;br&gt;- globalTrafficState : String&lt;br&gt;- incidentList : List&lt;br&gt;- subscribedAgents : List" vertex="1">
+          <mxGeometry height="64" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-36" parent="OMx-_PuhxHUSM0RGTiA1-34" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-37" parent="OMx-_PuhxHUSM0RGTiA1-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="+ collectTrafficData()&lt;br&gt;+ analyseNetworkState()&lt;br&gt;+ sendRedirectionRequest()&lt;br&gt;+ manageCriticalSituation()" vertex="1">
+          <mxGeometry height="72" width="160" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-38" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="IntersectionAgent" vertex="1">
+          <mxGeometry height="190" width="190" x="330" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-39" parent="OMx-_PuhxHUSM0RGTiA1-38" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="- intersectionId : String&lt;br&gt;- congestionLevel : String&lt;br&gt;- connectedLights : List&lt;br&gt;- neighborIntersections : List" vertex="1">
+          <mxGeometry height="74" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-40" parent="OMx-_PuhxHUSM0RGTiA1-38" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="" vertex="1">
+          <mxGeometry height="8" width="190" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-41" parent="OMx-_PuhxHUSM0RGTiA1-38" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="+ detectCongestion()&lt;br&gt;+ coordinateLights()&lt;br&gt;+ negotiateWithNeighbors()&lt;br&gt;+ notifySupervisor()" vertex="1">
+          <mxGeometry height="82" width="190" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-45" edge="1" parent="1" source="OMx-_PuhxHUSM0RGTiA1-38" style="endArrow=none;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=3;entryX=0.011;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.005;exitY=0.116;exitDx=0;exitDy=0;exitPerimeter=0;" target="OMx-_PuhxHUSM0RGTiA1-27" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="460" y="50" as="sourcePoint" />
+            <mxPoint x="620" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-46" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-45" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;utilise&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2375" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-47" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=3;entryX=0.576;entryY=0.958;entryDx=0;entryDy=0;entryPerimeter=0;" target="OMx-_PuhxHUSM0RGTiA1-33" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="120" y="270" as="sourcePoint" />
+            <mxPoint x="150" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-48" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-47" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="" vertex="1">
+          <mxGeometry relative="1" x="-0.2375" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-49" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-47" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;Communique avec&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1116" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-50" edge="1" parent="1" source="OMx-_PuhxHUSM0RGTiA1-38" style="endArrow=none;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=3;entryX=1.012;entryY=0.405;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" target="OMx-_PuhxHUSM0RGTiA1-31" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="232" y="133" as="sourcePoint" />
+            <mxPoint x="230" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-51" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-50" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="" vertex="1">
+          <mxGeometry relative="1" x="-0.2375" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-52" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-50" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;Communique avec&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1116" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-53" edge="1" parent="1" source="OMx-_PuhxHUSM0RGTiA1-35" style="endArrow=none;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=3;entryX=1.006;entryY=0.328;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.344;exitDx=0;exitDy=0;exitPerimeter=0;" target="OMx-_PuhxHUSM0RGTiA1-19" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="542" y="373" as="sourcePoint" />
+            <mxPoint x="540" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-54" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="" vertex="1">
+          <mxGeometry relative="1" x="-0.2375" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-55" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;envoie état à&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1116" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-58" edge="1" parent="1" source="OMx-_PuhxHUSM0RGTiA1-34" style="endArrow=none;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=3;entryX=1.011;entryY=0.757;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" target="OMx-_PuhxHUSM0RGTiA1-39" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="660" y="260" as="sourcePoint" />
+            <mxPoint x="540" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-59" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-58" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="" vertex="1">
+          <mxGeometry relative="1" x="-0.2375" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-60" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-58" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;envoie état à&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1116" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-61" edge="1" parent="1" source="OMx-_PuhxHUSM0RGTiA1-37" style="endArrow=none;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeWidth=3;entryX=1.009;entryY=0.861;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.012;exitY=0.847;exitDx=0;exitDy=0;exitPerimeter=0;" target="OMx-_PuhxHUSM0RGTiA1-25" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="620" y="450" as="sourcePoint" />
+            <mxPoint x="227" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-62" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="" vertex="1">
+          <mxGeometry relative="1" x="-0.2375" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-63" connectable="0" parent="OMx-_PuhxHUSM0RGTiA1-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#0e8088;strokeWidth=2;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;reçoit décisions de&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1116" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

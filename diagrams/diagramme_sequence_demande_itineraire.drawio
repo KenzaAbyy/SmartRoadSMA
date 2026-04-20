@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="NYgv78-97Kwn7Qy8gc9h">
+    <mxGraphModel dx="894" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-78" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=0;strokeColor=#0e8088;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;VehicleAgent&lt;/b&gt;" vertex="1">
+          <mxGeometry height="460" width="100" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-79" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=0;strokeColor=#0e8088;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;GatewayAgent&lt;/b&gt;" vertex="1">
+          <mxGeometry height="440" width="100" x="180" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-80" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=0;strokeColor=#0e8088;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;SupervisorAgent&lt;/b&gt;" vertex="1">
+          <mxGeometry height="430" width="100" x="390" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-81" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=0;strokeColor=#0e8088;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;IntersectionAgent&lt;/b&gt;" vertex="1">
+          <mxGeometry height="420" width="110" x="600" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-82" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};rounded=0;strokeColor=#0e8088;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="&lt;b&gt;HighwayAgent&lt;/b&gt;" vertex="1">
+          <mxGeometry height="430" width="100" x="770" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-86" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="INFORM_TRAFIC_STATE">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+            <mxPoint x="650" y="200" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-87" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" target="OMx-_PuhxHUSM0RGTiA1-79" value="REQUEST_ROUTE">
+          <mxGeometry relative="1" width="80" x="0.0063" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="70" y="120" as="sourcePoint" />
+            <mxPoint x="150" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-89" edge="1" parent="1" source="OMx-_PuhxHUSM0RGTiA1-79" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0.5;exitY=0.227;exitDx=0;exitDy=0;exitPerimeter=0;" target="OMx-_PuhxHUSM0RGTiA1-80" value="FORWARD_ROUTE_REQUEST">
+          <mxGeometry relative="1" width="80" x="0.0063" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="240" y="140" as="sourcePoint" />
+            <mxPoint x="399" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-90" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0.5;exitY=0.227;exitDx=0;exitDy=0;exitPerimeter=0;" value="REQUEST_TRAFIC_STATE">
+          <mxGeometry relative="1" width="80" x="0.0063" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="440" y="160" as="sourcePoint" />
+            <mxPoint x="649" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-91" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="REQUEST_TRAFIC_STATE">
+          <mxGeometry relative="1" width="80" x="0.4248" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="440" y="230" as="sourcePoint" />
+            <mxPoint x="819" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-92" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="INFORM_TRAFIC_STATE / INFORM_INCIDENT">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="823" y="264.5" as="sourcePoint" />
+            <mxPoint x="440" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-93" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;rounded=0;strokeColor=#0e8088;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#b0e3e6;gradientColor=none;" value="alt" vertex="1">
+          <mxGeometry height="200" width="230" x="220" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-94" edge="1" parent="1" source="OMx-_PuhxHUSM0RGTiA1-93" style="endArrow=none;dashed=1;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0.013;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.983;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="OMx-_PuhxHUSM0RGTiA1-93" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="330" />
+            </Array>
+            <mxPoint x="260" y="340" as="sourcePoint" />
+            <mxPoint x="310" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-95" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="( Incident sur autoroute)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="290" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-96" edge="1" parent="1" source="OMx-_PuhxHUSM0RGTiA1-80" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;entryX=0.017;entryY=0.27;entryDx=0;entryDy=0;entryPerimeter=0;" value="PROPOSE_ROUTE(route alternative)">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points" />
+            <mxPoint x="440" y="310" as="sourcePoint" />
+            <mxPoint x="227.03999999999994" y="304" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-97" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="PROPOSE_ROUTE(route optimale&amp;nbsp;&lt;div&gt;standard)&lt;/div&gt;">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points" />
+            <mxPoint x="440" y="400" as="sourcePoint" />
+            <mxPoint x="230" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-98" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="( pas d&#39;incident)" vertex="1">
+          <mxGeometry height="30" width="100" x="280" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="OMx-_PuhxHUSM0RGTiA1-102" edge="1" parent="1" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="UpdatePath()">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="450" />
+              <mxPoint x="130" y="480" />
+            </Array>
+            <mxPoint x="70" y="450" as="sourcePoint" />
+            <mxPoint x="70" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
